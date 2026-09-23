@@ -1,0 +1,71 @@
+title,price_gbp,price_inr,rating,in_stock,category
+It's Only the Himalayas,45.17,4765.44,2,True,Travel
+Full Moon over Noahâs Ark: An Odyssey to Mount Ararat and Beyond,49.43,5214.86,4,True,Travel
+See America: A Celebration of Our National Parks & Treasured Sites,48.87,5155.78,3,True,Travel
+Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel,36.94,3897.17,2,True,Travel
+Under the Tuscan Sun,37.33,3938.31,3,True,Travel
+A Summer In Europe,44.34,4677.87,2,True,Travel
+The Great Railway Bazaar,30.54,3221.97,1,True,Travel
+A Year in Provence (Provence #1),56.88,6000.84,4,True,Travel
+The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2),23.21,2448.66,1,True,Travel
+Neither Here nor There: Travels in Europe,38.95,4109.23,3,True,Travel
+"1,000 Places to See Before You Die",26.08,2751.44,5,True,Travel
+Sharp Objects,47.82,5045.01,4,True,Mystery
+"In a Dark, Dark Wood",19.63,2070.96,1,True,Mystery
+The Past Never Ends,56.5,5960.75,4,True,Mystery
+A Murder in Time,16.64,1755.52,1,True,Mystery
+The Murder of Roger Ackroyd (Hercule Poirot #4),44.1,4652.55,4,True,Mystery
+The Last Mile (Amos Decker #2),54.21,5719.16,2,True,Mystery
+That Darkness (Gardiner and Renner #1),13.92,1468.56,1,True,Mystery
+Tastes Like Fear (DI Marnie Rome #3),10.69,1127.79,1,True,Mystery
+A Time of Torment (Charlie Parker #14),48.35,5100.92,5,True,Mystery
+A Study in Scarlet (Sherlock Holmes #1),16.73,1765.02,2,True,Mystery
+Poisonous (Max Revere Novels #3),26.8,2827.4,3,True,Mystery
+Murder at the 42nd Street Library (Raymond Ambler #1),54.36,5734.98,4,True,Mystery
+Most Wanted,35.28,3722.04,3,True,Mystery
+Hide Away (Eve Duncan #20),11.84,1249.12,1,True,Mystery
+Boar Island (Anna Pigeon #19),59.48,6275.14,3,True,Mystery
+Tipping the Velvet,53.74,5669.57,1,True,Historical Fiction
+Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton,29.69,3132.3,3,True,Historical Fiction
+A Flight of Arrows (The Pathfinders #2),55.53,5858.42,5,True,Historical Fiction
+The House by the Lake,36.95,3898.23,1,True,Historical Fiction
+Mrs. Houdini,30.25,3191.38,5,True,Historical Fiction
+The Marriage of Opposites,28.08,2962.44,4,True,Historical Fiction
+Glory over Everything: Beyond The Kitchen House,45.84,4836.12,3,True,Historical Fiction
+"Love, Lies and Spies",20.55,2168.02,2,True,Historical Fiction
+A Paris Apartment,39.01,4115.55,4,True,Historical Fiction
+Lilac Girls,17.28,1823.04,2,True,Historical Fiction
+The Constant Princess (The Tudor Court #1),16.62,1753.41,3,True,Historical Fiction
+The Invention of Wings,37.34,3939.37,1,True,Historical Fiction
+World Without End (The Pillars of the Earth #2),32.97,3478.34,4,True,Historical Fiction
+The Passion of Dolssa,28.32,2987.76,5,True,Historical Fiction
+Girl With a Pearl Earring,26.77,2824.24,1,True,Historical Fiction
+The Requiem Red,22.65,2389.57,1,True,Young Adult
+Set Me Free,17.46,1842.03,5,True,Young Adult
+The Natural History of Us (The Fine Art of Pretending #2),45.22,4770.71,3,True,Young Adult
+Obsidian (Lux #1),14.86,1567.73,2,True,Young Adult
+Burning,28.81,3039.46,3,True,Young Adult
+A Fierce and Subtle Poison,28.13,2967.71,4,True,Young Adult
+Scarlett Epstein Hates It Here,43.55,4594.52,5,True,Young Adult
+"Nightingale, Sing",38.28,4038.54,1,True,Young Adult
+Library of Souls (Miss Peregrineâs Peculiar Children #3),48.56,5123.08,5,True,Young Adult
+Frostbite (Vampire Academy #2),29.99,3163.94,5,True,Young Adult
+Wild Swans,14.36,1514.98,2,True,Young Adult
+Until Friday Night (The Field Party #1),46.31,4885.7,2,True,Young Adult
+This Is Where It Ends,27.12,2861.16,2,True,Young Adult
+The Darkest Lie,35.35,3729.42,5,True,Young Adult
+My Kind of Crazy,40.36,4257.98,1,True,Young Adult
+The Most Perfect Thing: Inside (and Outside) a Bird's Egg,42.96,4532.28,4,True,Science
+Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine,57.36,6051.48,5,True,Science
+Sorting the Beef from the Bull: The Science of Food Fraud Forensics,44.74,4720.07,4,True,Science
+Tipping Point for Planet Earth: How Close Are We to the Edge?,37.55,3961.52,1,True,Science
+"The Fabric of the Cosmos: Space, Time, and the Texture of Reality",55.91,5898.5,1,True,Science
+Diary of a Citizen Scientist: Chasing Tiger Beetles and Other New Ways of Engaging the World,28.41,2997.26,1,True,Science
+The Origin of Species,10.01,1056.06,4,True,Science
+The Grand Design,13.76,1451.68,3,True,Science
+Peak: Secrets from the New Science of Expertise,16.28,1717.54,2,True,Science
+"The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",13.03,1374.66,4,True,Science
+"The Disappearing Spoon: And Other True Tales of Madness, Love, and the History of the World from the Periodic Table of the Elements",57.35,6050.42,5,True,Science
+"Surely You're Joking, Mr. Feynman!: Adventures of a Curious Character",25.83,2725.06,2,True,Science
+Seven Brief Lessons on Physics,30.6,3228.3,4,True,Science
+The Selfish Gene,29.45,3106.98,1,True,Science
