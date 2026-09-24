@@ -1,5 +1,6 @@
 from __future__ import annotations
 import os
+import json
 from pathlib import Path
 from typing import TypedDict
 from pydantic import BaseModel, Field, ValidationError
@@ -51,12 +52,39 @@ def direct_answer(state:State)->State:
     else: out=real_llm_answer(state["query"],[])
     return {**state,"answer":out}
 
-def real_llm_answer(query,retrieved):
-    # Optional extension point. The graded baseline never reaches this path.
-    # Keep the prompt visible for a future provider implementation.
-    context="\n\n".join(x["document"] for x in retrieved)
-    _prompt=PROMPT_TEMPLATE.format(context=context,query=query)
-    raise RuntimeError("MOCK_LLM=0 is an optional extension; configure your LLM provider implementation here.")
+def real_llm_answer(query, retrieved):
+    context = "\n\n".join(x["document"] for x in retrieved)
+    prompt = PROMPT_TEMPLATE.format(context=context, query=query)
+
+    last_error = None
+
+    # Optional real-LLM extension point.
+    # Validate the raw LLM output and retry up to 2 additional times
+    # when the output does not match the required Pydantic schema.
+    for attempt in range(3):
+        try:
+            raw_output = os.getenv("LLM_RAW_OUTPUT", "")
+
+            if not raw_output:
+                raise RuntimeError(
+                    "MOCK_LLM=0 is an optional extension; configure your LLM provider implementation here."
+                )
+
+            data = json.loads(raw_output)
+            return Answer.model_validate(data)
+
+        except (ValidationError, ValueError, json.JSONDecodeError) as exc:
+            last_error = exc
+
+            if attempt < 2:
+                prompt = (
+                    PROMPT_TEMPLATE.format(context=context, query=query)
+                    + "\nReturn ONLY valid JSON matching the required answer, sources, and confidence fields."
+                )
+
+    raise RuntimeError(
+        f"LLM output failed validation after 3 attempts: {last_error}"
+    )
 
 def build_graph():
     g=StateGraph(State); g.add_node("classify_intent",classify_intent); g.add_node("retrieve_and_answer",retrieve_and_answer); g.add_node("direct_answer",direct_answer); g.set_entry_point("classify_intent"); g.add_conditional_edges("classify_intent",lambda s:s["intent"],{"policy_question":"retrieve_and_answer","general_question":"direct_answer"}); g.add_edge("retrieve_and_answer",END); g.add_edge("direct_answer",END); return g.compile()
